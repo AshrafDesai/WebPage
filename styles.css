@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  h1, h4 {
+    font-weight: 600;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em;
+    background-color: #1d3557;
+    color: white;
+  }
+  
+  header .logo {
+    font-size: 2em; /* Increased for better visibility */
+    font-weight: bold;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-right: 1.5em;
+  }
+  
+  nav ul li a {
+    color: white;
+    font-size: 1.1em;
+  }
+  
+  .auth-buttons button {
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 0.6em 1.2em;
+    border-radius: 25px;
+    color: white;
+    margin-left: 0.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .auth-buttons button:hover {
+    background-color: white;
+    color: #1d3557;
+  }
+  
+  .signin-btn {
+    border-color: #0077b6;
+  }
+  
+  .register-btn {
+    border-color: #38b000;
+  }
+  
+  main {
+    padding: 4em 2em;
+    text-align: center;
+    background-color: #f1faee;
+  }
+  
+  .hero h1 {
+    font-size: 2.8em; /* Fluid typography can be added here */
+    color: #1d3557;
+    margin-bottom: 0.5em;
+  }
+  
+  .hero p {
+    font-size: 1.3em; /* Fluid typography can be added here */
+    color: #457b9d;
+    margin-bottom: 2.5em;
+  }
+  
+  .theme-buttons button {
+    padding: 0.9em 2em;
+    margin: 0.5em;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .light-theme {
+    background-color: #e9c46a;
+    color: #1d3557;
+  }
+  
+  .dark-theme {
+    background-color: #264653;
+    color: white;
+  }
+  
+  .theme-buttons button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #264653;
+    color: white;
+    padding: 2.5em 1.5em;
+  }
+  
+  .footer-top {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1.5em;
+  }
+  
+  .social-media a {
+    margin-left: 1em;
+  }
+  
+  .social-media img {
+    width: 35px;
+    height: 35px;
+    filter: invert(100%);
+    transition: transform 0.3s ease;
+  }
+  
+  .social-media a:hover img {
+    transform: scale(1.2);
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-column {
+    flex: 1;
+    margin-right: 1.5em;
+  }
+  
+  .footer-column h4 {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 0.6em;
+  }
+  
+  .footer-column ul li a {
+    color: #f1faee;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-column ul li a:hover {
+    color: #e9c46a;
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin-bottom: 1em;
+    }
+  
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-column {
+      margin-bottom: 1.5em;
+    }
+  
+    /* Adjust font sizes for smaller screens */
+    .hero h1 {
+      font-size: 2.2em;
+    }
+  
+    .hero p {
+      font-size: 1.1em;
+    }
+  
+    header .logo {
+      font-size: 1.5em;
+    }
+  
+    nav ul li a {
+      font-size: 1em;
+    }
+  
+    .auth-buttons button {
+      padding: 0.5em 1em;
+    }
+  
+    .theme-buttons button {
+      padding: 0.7em 1.5em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero h1 {
+      font-size: 1.8em;
+    }
+  
+    .hero p {
+      font-size: 1em;
+    }
+  
+    header .logo {
+      font-size: 1.2em;
+    }
+  
+    .footer-column {
+      margin-right: 0;
+    }
+  
+    .social-media img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
